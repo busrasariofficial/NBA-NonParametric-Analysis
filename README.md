@@ -1,4 +1,5 @@
- NBA Oyuncu Performanslarının Parametrik Olmayan İstatistiksel Yöntemlerle İncelenmesi
+[TR]
+NBA Oyuncu Performanslarının Parametrik Olmayan İstatistiksel Yöntemlerle İncelenmesi
 
 Bu proje, NBA'de forma giyen oyuncuların (Alperen Şengün, Furkan Korkmaz vb.) ve takımların performans verilerini, verilerin normal dağılım varsayımını karşılamadığı durumlarda kullanılan Parametrik Olmayan (Non-Parametric) testlerle analiz eder.
 
@@ -25,3 +26,26 @@ Veri setinin normallik testleri (Shapiro-Wilk) yapılmış ve parametrik testler
 ---
 Hazırlayan: Büşra Sarı  
 Hacettepe Üniversitesi - İstatistik Bölümü
+[ENG]
+ NBA Player Scoring Analysis: Stratified vs. Simple Random Sampling
+
+This project investigates the efficiency of different sampling methodologies in estimating the average Points Per Game (PPG) for NBA players during the 2023-2024 season.
+
+Methodology
+The study compares two primary statistical approaches:
+* Stratified Random Sampling (SRS): Players were grouped into 3 natural strata based on their positions (**Guard, Forward, Center**). **Neyman Allocation** was applied to minimize variance by accounting for the higher variability in the Guard stratum.
+* Simple Random Sampling (SRS): Used as a baseline to evaluate the relative gain in precision.
+
+Key Statistical Insights
+* Sample Size (n): 107 players.
+* Variance (Stratified): 0.1943
+* Variance (Simple): 0.54
+* Conclusion: Stratified sampling yielded a significantly lower variance, proving that accounting for player positions provides a more reliable estimation of league-wide scoring trends.
+
+ Files
+* `NBA_Sampling_Report.pdf`: Full academic report including formulas and derivations.
+* `Data_Calculations.R`: R scripts used for sampling and variance estimation.
+
+---
+**Author:** Büşra Sarı  
+*Statistics Student | Hacettepe University*
